@@ -1,21 +1,40 @@
 <!DOCTYPE html> 
 <html> 
   <head>
-    <script src="js/jquery.js" type="text/javascript"></script> 
-    <script src="js/crafty.js" type="text/javascript"></script> 
-    <script src="js/game.js" type="text/javascript"></script> 
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/crafty.js" type="text/javascript"></script>
+    <script src="js/audio.js" type="text/javascript"></script>
+    <script src="js/game.js" type="text/javascript"></script>
     <link href="stylesheets/styles.css" media="screen" rel="stylesheet" type="text/css" />
   </head> 
   <body> 
     <div id='wrapper'>
       <div id='border-image'></div>
+      <div id='warning'></div>
       <div id='cr-stage'>
         <div id='score-box'>
           <div class='number'>0</div>
         </div>
+        <div id='killStreak'></div>
+        <div id='countdown'><div class="main"></div><div class="subtext"></div></div>
       </div>
       <div id='info-bar'>
         <div id='currentNumber'><span class='num'></span></div>
+      </div>
+      <div id='explanation'>
+        <img src="img/controls.png" />
+        <p>Move with WASD</p>
+        <p>Dial the enemy's numbers on your number pad.</p>
+        <p>Press enter or spacebar to detonate or cancel the number.</p>
+        <p>Don't have a number pad? Use the number row.</p>
+      </div>
+      <div id='credits'>
+        <p>Raymond Tang - Developer</p>
+        <p>Justin Vanderheide - Developer</p>
+        <p>Andrew Glisinski - Artist</p>
+        <p>Jen Costa - Sound Effects</p>
+        <p>Kyle Johnston - Sound Effects</p>
+        <p>Ryan Roth - Music</p>
       </div>
     </div>
   </body> 
